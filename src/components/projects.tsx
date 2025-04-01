@@ -48,7 +48,7 @@ export default function Projects() {
       title: "ShellHacks 2023",
       description:
         "Developed a Chrome plugin for professor selection, integrating RateMyProfessor and FIU data. Used Python for web scraping and sentiment analysis (OpenAI API). Built a JavaScript frontend for the extension. 2nd place out of 200+ projects & 3rd place in Google Challenge.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/shellhacks2023.png",
       tags: ["Chrome Extension", "Python", "JavaScript", "OpenAI API"],
       github: "https://github.com/FernandoAzanza",
       readMore: "https://github.com/FernandoAzanza",
@@ -58,7 +58,7 @@ export default function Projects() {
       title: "ClickBait News Detector",
       description:
         "Developed a machine learning model to detect clickbait using logistic regression. Preprocessed Kaggle dataset, applying text normalization, punctuation removal, and stopword filtering. Used TF-IDF vectorization to transform textual data into numerical features.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/clickbait-detector.png",
       tags: ["Python", "Machine Learning", "NLP", "Data Science"],
       github: "https://github.com/FernandoAzanza",
       readMore: "https://github.com/FernandoAzanza",
