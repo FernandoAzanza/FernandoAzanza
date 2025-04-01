@@ -11,7 +11,7 @@ export default function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150)
   const [initialAnimationComplete, setInitialAnimationComplete] = useState(false)
 
-  const roles = ["Software Engineer", "Product Manager", "Computer Science Student"]
+  const roles = ["Product Manager", "Software Engineer", "CS Student"]
 
   useEffect(() => {
     const handleTyping = () => {
@@ -88,9 +88,9 @@ export default function Hero() {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center md:justify-end animate-slideInRight">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary shadow-2xl">
+          <div className="relative w-80 h-80 md:w-[28rem] md:h-[28rem] rounded-full overflow-hidden border-4 border-primary shadow-2xl">
             <Image
-              src="/placeholder.svg?height=320&width=320"
+              src="/FA_Headshot.png"
               alt="Fernando Azanza"
               fill
               className="object-cover"
