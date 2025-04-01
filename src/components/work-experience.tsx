@@ -38,7 +38,7 @@ export default function WorkExperience() {
         "Implemented customer journey mapping to identify diverse user segments",
         "Successfully pitched the final MVP to Capital One associates and stakeholders",
       ],
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "/CapitalOneLogo.jpg",
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ export default function WorkExperience() {
         "Facilitated a weekly design thinking roundtable for student ideation and feedback",
         "Assisted 60 plus students with user interviews and data analysis in two 13-week innovation challenges",
       ],
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "/SUPLogo.jpg",
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ export default function WorkExperience() {
         "1st place winner of the engineering hackathon",
         "Built a project on the NOW platform showcasing Data Management, Security, Automation, and User Experience",
       ],
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "/ServiceNowLogo.png",
     },
   ]
 
@@ -94,9 +94,13 @@ export default function WorkExperience() {
                       <div className="bg-blue-500"></div>
                       <div className="bg-yellow-500"></div>
                     </div>
-                  ) : exp.company === "Capital One" ? (
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-                      C1
+                  ) : exp.logo ? (
+                    <div className="w-12 h-12 rounded-lg overflow-hidden">
+                      <img 
+                        src={exp.logo} 
+                        alt={`${exp.company} logo`}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   ) : (
                     <div className="w-12 h-12 relative bg-secondary/30 rounded-lg flex items-center justify-center">
