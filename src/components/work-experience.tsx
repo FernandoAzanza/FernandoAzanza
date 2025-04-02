@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Briefcase } from "lucide-react"
+import Image from "next/image"
 
 interface WorkExperience {
   id: number
@@ -96,9 +97,11 @@ export default function WorkExperience() {
                     </div>
                   ) : exp.logo ? (
                     <div className="w-12 h-12 rounded-lg overflow-hidden">
-                      <img 
-                        src={exp.logo} 
+                      <Image
+                        src={exp.logo}
                         alt={`${exp.company} logo`}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain"
                       />
                     </div>
@@ -141,4 +144,3 @@ export default function WorkExperience() {
     </div>
   )
 }
-

@@ -56,11 +56,11 @@ export default function About() {
               <div className="space-y-4">
                 <p className="text-muted-foreground">
                   I am an international student from Ecuador studying Computer Science at Florida International
-                  University. I'm excited to make the most of my time here, which is why I'm constantly seeking to
+                  University. I&#39;m excited to make the most of my time here, which is why I&#39;m constantly seeking to
                   improve my abilities through hands-on experience.
                 </p>
                 <p className="text-muted-foreground">
-                  I'm an enthusiastic learner; I enjoy creating things that have an impact, and most of all, I love
+                  I&#39;m an enthusiastic learner; I enjoy creating things that have an impact, and most of all, I love
                   helping others with my work.
                 </p>
 
@@ -90,9 +90,9 @@ export default function About() {
                     <Image
                       src="/FIULogo.png"
                       alt="Florida International University"
-                      width={96} // Adjust width to fit naturally
-                      height={96} // Adjust height to fit naturally
-                      className="object-contain" // Ensures the logo maintains its aspect ratio
+                      width={96}
+                      height={96}
+                      className="object-contain"
                     />
                   </div>
                   <div>
@@ -154,7 +154,7 @@ export default function About() {
               <div className="space-y-2">
                 <h4 className="font-medium text-foreground flex items-center">
                   <MessageSquare className="w-5 h-5 text-primary mr-2" />
-                  User Interviews & Journey Mapping
+                  User Interviews &amp; Journey Mapping
                 </h4>
                 <p className="text-muted-foreground">
                   Skilled in conducting user research and creating journey maps to identify pain points and
@@ -178,4 +178,3 @@ export default function About() {
     </section>
   )
 }
-

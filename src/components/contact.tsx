@@ -1,8 +1,7 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import type React from "react"
-import { useState } from "react"
 import { Send, Linkedin, Github } from "lucide-react"
 
 export default function Contact() {
@@ -52,12 +51,11 @@ export default function Contact() {
     setSubmitSuccess(false)
     setSubmitError(false)
 
-    // Simulate form submission
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500))
       setSubmitSuccess(true)
       setFormData({ name: "", email: "", message: "" })
-    } catch (error) {
+    } catch {
       setSubmitError(true)
     } finally {
       setIsSubmitting(false)
@@ -76,10 +74,10 @@ export default function Contact() {
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="animate-slideInLeft">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Let's Connect</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Let&#39;s Connect</h3>
             <p className="text-muted-foreground mb-8">
-              Feel free to reach out if you're looking for a passionate software engineer, have a question, or just want
-              to connect.
+              Feel free to reach out if you&#39;re looking for a passionate software engineer, have a question, or just
+              want to connect.
             </p>
 
             <div className="space-y-6">
@@ -188,7 +186,7 @@ export default function Contact() {
 
               {submitSuccess && (
                 <div className="mt-4 p-3 bg-accent/20 text-accent-foreground rounded-lg">
-                  Thank you for your message! I'll get back to you soon.
+                  Thank you for your message! I&#39;ll get back to you soon.
                 </div>
               )}
 
@@ -204,4 +202,3 @@ export default function Contact() {
     </section>
   )
 }
-

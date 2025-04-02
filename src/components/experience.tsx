@@ -5,7 +5,6 @@ import WorkExperience from "./work-experience"
 
 export default function Experience() {
   const sectionRef = useRef<HTMLElement>(null)
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
